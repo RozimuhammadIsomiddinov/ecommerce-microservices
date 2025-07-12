@@ -6,7 +6,6 @@ require("dotenv").config();
 
 const router = express.Router();
 
-// 1. Google login so‘rovi
 router.get(
   "/auth/google",
   passport.authenticate("google", { scope: ["profile", "email"] })
