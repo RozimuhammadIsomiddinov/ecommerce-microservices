@@ -1,11 +1,14 @@
 module.exports = {
   readAll: `
-    SELECT *FROM products LIMIT ? OFFSET ?;
-    `,
+    SELECT * FROM products
+    LIMIT ? OFFSET ?;
+  `,
   readByID: `
-    SELECT *FROM products FROM id = ?;
-    `,
+    SELECT * FROM products
+    WHERE id = ?;
+  `,
   readByName: `
-    SELECT *FROM products FROM name iLike ?;
-    `,
+    SELECT * FROM products
+    WHERE name ILIKE ?;
+  `,
 };
